@@ -1,0 +1,324 @@
+input[type="checkbox"],
+.group-input input[type="radio"] {
+    display: none;
+}
+.media-body {
+  padding: 0px 10px !important;
+  width: 10000px;
+}
+.group-input label {
+    margin-right: 15px;
+    font-weight: 200!important;
+}
+
+.media-thumb {
+    border: 1px solid #ccc;
+    width: 65px;
+    height: 65px;
+}
+
+input[type="checkbox"] + label:before,
+.group-input input[type="radio"] + label:before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 200!important;
+    content: "";
+    border: 1px solid #00A0B0;
+    margin: -4px 6px 0 0;
+    border-radius: 4px;
+    background-clip: padding-box;
+    -webkit-box-shadow: inset 1px 1px 4px 0px #6A4A3C;
+    box-shadow: inset 1px 1px 3px 0px #6A4A3C;
+}
+
+.group-input input[type="radio"] + label:before {
+    border-radius: 100%;
+    background-clip: padding-box;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background: url('../images/star.png') no-repeat center center;
+    background-size: 18px;
+}
+
+.group-input input[type="radio"]:checked + label:before {
+    background: url('../../images/heart.png') no-repeat center center;
+    background-size: 20px;
+    border: 1px solid white;
+    font-size: 50px;
+    line-height: 18px;
+}
+
+.col-sm-10 span {
+    color: red;
+    padding-left: 10px;
+}
+
+.nav>li>span {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.add-user {
+    /*padding-bottom: 60px;*/
+}
+
+
+/* CSS3 EFFECTS */
+
+
+/* THIRD EFFECTS */
+
+.third-effect .mask {
+    opacity: 0;
+    overflow: visible;
+    border: 100px solid rgba(0, 0, 0, 0.7);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.third-effect a.info {
+    position: relative;
+    top: -10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s 0s ease-in-out;
+    -moz-transition: opacity 0.5s 0s ease-in-out;
+    -o-transition: opacity 0.5s 0s ease-in-out;
+    -ms-transition: opacity 0.5s 0s ease-in-out;
+    transition: opacity 0.5s 0s ease-in-out;
+}
+
+.third-effect:hover .mask {
+    opacity: 1;
+    border: 100px solid rgba(0, 0, 0, 0.29);
+}
+
+.third-effect:hover a.info {
+    opacity: 1;
+    -moz-transition-delay: 0.3s;
+    -webkit-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+
+/* CSS3 STYLE GENERIC */
+
+.view {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 5px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 0px 5px #aaa;
+    cursor: default;
+}
+
+.icy-code {
+    width: 200px;
+}
+
+.view .mask,
+.view .content {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /*
+   overflow: hidden;*/
+    top: 0;
+    left: 0;
+}
+
+.view img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.view a.info {
+    cursor: pointer;
+    opacity: 1;
+    top: -68px;
+    left: -68px;
+    background: url(/images/photo-camera.png) center no-repeat;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    text-indent: -9999px;
+    width: 32px;
+    height: 32px;
+}
+
+.user-panel>.image>img {
+    height: 44px;
+}
+
+.hdd {
+    display: none;
+}
+
+.btnavatar {
+    padding: 3px 6px !important;
+}
+
+#viewlistimage {
+    float: left;
+    width: 97px;
+    height: 100px;
+    margin: 10px 0px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 0px 5px #aaa;
+    cursor: default;
+}
+
+#viewlistimage img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+#listimage {
+    display: none;
+}
+
+#list-image {
+    margin: 10px 0px;
+}
+
+#listimages {
+    margin: 10px 0px;
+}
+
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transform: translate(460px, -100px) rotate(180deg);
+    -ms-transform: translate(460px, -100px) rotate(180deg);
+    transform: translate(460px, -100px) rotate(180deg);
+    -webkit-transition: all 0.2s 0.4s ease-in-out;
+    transition: all 0.2s 0.4s ease-in-out;
+}
+
+.hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1px 3px;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 35px 0 0 0;
+    background-color: transparent;
+    -webkit-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    transform: translateY(-200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+.hovereffect:hover h2 {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.hovereffect:hover a.info {
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    cursor: pointer;
+}
+
+#slideadmin {
+    float: left;
+    width: 269px;
+    height: 169px;
+    margin: 10px 0px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 0px 5px #aaa;
+    cursor: pointer;
+}
+
+#slideadmin img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+#optionseve {
+    float: right;
+    margin: 70px;
+}
+
+.icy-option {
+    display: inline-block;
+    max-width: 100%;
+    margin: 6px 10px 0px 24px;
+    font-weight: 700;
+}

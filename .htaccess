@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+	RewriteRule ([0-9]+).html$ ?pages=product&id=$1
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^admin$ admin.php
+</IfModule>
