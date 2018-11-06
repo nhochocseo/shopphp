@@ -1,4 +1,5 @@
-<script type="text/javascript">
+<?php echo home; ?>
+    <script type="text/javascript">
 function BrowseServer(obj) {
     var finder = new CKFinder();
     finder.basePath = '../bootstrap/plugins/ckeditor/';
@@ -7,7 +8,8 @@ function BrowseServer(obj) {
 }
 
 function SetFileField(fileUrl) {
-    document.getElementById("hdd").src = fileUrl;
+    var home = "<?php echo home; ?>";
+    document.getElementById("hdd").src = home +'/'+fileUrl;
     document.getElementById("anhHDD").innerHTML = '<form class="form-horizontal" action="" method="POST"><input type="text" name="avatar" class="hdd" value="' + fileUrl + '" /><input type="submit" name="btnAvatar" class="btn btnavatar btn-info" value="Lưu"></form>';
 }
 </script>
@@ -33,7 +35,7 @@ function SetFileField(fileUrl) {
                 <div class="box box-primary">
                     <div class="box-body box-profile">
                         <div class="view third-effect">
-                            <img class="profile-user-img img-responsive img-circle" id="hdd" src="<?php echo $myinfo->Avatar; ?>" alt="User profile picture">
+                            <img class="profile-user-img img-responsive img-circle" id="hdd" src="<?php echo home.''.$myinfo->Avatar; ?>" alt="User profile picture">
                             <div class="mask">
                                 <a onclick="BrowseServer('avatars');" class="info" data-toggle="tooltip" title="Đổi Avatar" name="avatar">Changer Avatar</a>
                             </div>

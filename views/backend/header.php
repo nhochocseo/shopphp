@@ -50,7 +50,7 @@
                         <!-- User Account: style can be found in dropdown.less -->
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <img src="<?php echo home.'/'.$myinfo->Avatar; ?>" class="user-image" alt="<?php
+                                <img src="<?php echo home.''.$myinfo->Avatar; ?>" class="user-image" alt="<?php
                                         if($Name == "") {
                                           echo "Chưa Đặt Tên";
                                         }

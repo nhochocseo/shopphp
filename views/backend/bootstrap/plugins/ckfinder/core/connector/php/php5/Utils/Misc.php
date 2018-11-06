@@ -189,7 +189,7 @@ class CKFinder_Connector_Utils_Misc
      * @return int
      */
     public static function returnBytes($val) {
-        $val = trim($val);
+        $val = strtotime(trim($val));
         if (!$val) {
             return 0;
         }
@@ -202,6 +202,8 @@ class CKFinder_Connector_Utils_Misc
                 $val *= 1024;
             case 'k':
                 $val *= 1024;
+            default:
+            $val *= 1024;
         }
 
         return $val;

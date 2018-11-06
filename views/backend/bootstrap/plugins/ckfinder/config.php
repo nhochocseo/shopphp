@@ -1,5 +1,6 @@
 <?php
-include_once("/../../../../../models/function.php");
+define('ROOT', dirname(dirname(__FILE__))); 
+include_once(ROOT."/../../../../models/function.php");
 /*
  * ### CKFinder : Configuration File - Basic Instructions
  *
