@@ -12,6 +12,7 @@ include_once("models/option.class.php");
 include_once("models/class.phpmailer.php"); 
 include_once("models/class.smtp.php"); 
 include_once("models/function.php");
+include_once("Common/MessageNotification.php");
 	class Controller
 	{
 		public $User,$Category,$Product,$News,$ConfigMobile,$Slider,$Orders,$Maps,$Options;
